@@ -20,8 +20,32 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radrex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnZ-XK-4Bl">
+                                <rect key="frame" x="161" y="30" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddT-wN-opR">
+                                <rect key="frame" x="160" y="50" width="55" height="30"/>
+                                <state key="normal" title="Tap Me!"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uOy-Oe-ODu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ddT-wN-opR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="1sN-DB-t8D"/>
+                            <constraint firstItem="OnZ-XK-4Bl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="Enh-vc-dNx"/>
+                            <constraint firstItem="ddT-wN-opR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pfi-ZY-6il"/>
+                            <constraint firstItem="OnZ-XK-4Bl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mI0-09-2nG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theLabel" destination="OnZ-XK-4Bl" id="Vra-am-BRX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
